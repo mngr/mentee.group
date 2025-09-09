@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mentee Group Ltd — Product, Data & Analytics Consulting + Software</title>
+  <meta name="description" content="Mentee Group Ltd delivers senior product management, data & analytics consulting, and builds focused software tools that move metrics." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#4f46e5" />
+  <link rel="canonical" href="https://mentee.group/" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mentee Group Ltd" />
+  <meta property="og:description" content="Consulting & software for product management, data, and analytics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mentee.group/" />
+  <meta property="og:image" content="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'><rect width='100%' height='100%' fill='%234f46e5'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-size='64'>Mentee Group Ltd</text></svg>"/>
+  <!-- Favicon (emoji) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>📈</text></svg>">
+
+  <style>
+    :root{
+      --bg: #0b1020; /* dark base */
+      --panel: #0f172a; /* slate-900 */
+      --text: #e5e7eb; /* gray-200 */
+      --muted: #94a3b8; /* slate-400 */
+      --brand: #4f46e5; /* indigo-600 */
+      --brand-2: #06b6d4; /* cyan-500 */
+      --ok: #10b981; /* emerald */
+      --warn: #f59e0b; /* amber */
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#ffffff; --panel:#f8fafc; --text:#0f172a; --muted:#475569; }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:-apple-system, system-ui, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color:var(--text); background:radial-gradient(1200px 600px at 80% -20%, rgba(79,70,229,.25), transparent), radial-gradient(1000px 400px at -10% 10%, rgba(6,182,212,.18), transparent), var(--bg)}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1080px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.7);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid rgba(148,163,184,.15)}
+    @media (prefers-color-scheme: light){ header{background:rgba(255,255,255,.7)} }
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;font-weight:800;letter-spacing:.5px}
+    .brand-badge{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));margin-right:12px;box-shadow:var(--shadow)}
+    .brand-badge svg{filter:drop-shadow(0 2px 4px rgba(0,0,0,.2))}
+    .nav-links{display:flex;gap:18px;align-items:center}
+    .nav-links a{padding:10px 12px;border-radius:12px;color:var(--muted)}
+    .nav-links a:hover{color:var(--text);background:rgba(148,163,184,.12)}
+    .cta{padding:10px 14px;border-radius:14px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:white;font-weight:600;box-shadow:var(--shadow)}
+    .cta:hover{transform:translateY(-1px)}
+    .menu-btn{display:none;background:none;border:0;color:var(--text);font-size:26px}
+    @media (max-width:760px){
+      .nav-links{display:none}
+      .menu-btn{display:block}
+      .nav.open .nav-links{display:flex;flex-direction:column;position:absolute;left:12px;right:12px;top:64px;background:var(--panel);border:1px solid rgba(148,163,184,.15);padding:12px;border-radius:16px}
+    }
+
+    .hero{padding:72px 0 36px}
+    .eyebrow{display:inline-block;padding:6px 10px;border:1px solid rgba(148,163,184,.25);border-radius:999px;color:var(--muted);font-size:12px;letter-spacing:.3px}
+    h1{font-size:48px;line-height:1.04;margin:18px 0 12px}
+    .lead{font-size:18px;color:var(--muted);max-width:760px}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .subtle{padding:10px 14px;border-radius:14px;background:transparent;border:1px solid rgba(148,163,184,.25);color:var(--text)}
+
+    section{padding:42px 0}
+    .grid{display:grid;gap:18px}
+    .cards-3{grid-template-columns:repeat(3,1fr)}
+    .cards-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:960px){ .cards-3,.cards-2{grid-template-columns:1fr} }
+    .card{background:var(--panel);border:1px solid rgba(148,163,184,.15);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+    .card h3{margin:0 0 6px}
+    .muted{color:var(--muted)}
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border-radius:999px;background:rgba(148,163,184,.12);color:var(--muted);font-size:12px}
+    .kpi{display:flex;gap:18px;flex-wrap:wrap;margin-top:14px}
+    .kpi .item{flex:1 1 200px;background:linear-gradient(180deg,rgba(79,70,229,.12),transparent);border:1px dashed rgba(79,70,229,.35);padding:14px;border-radius:14px}
+
+    .split{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+    @media (max-width:960px){ .split{grid-template-columns:1fr} }
+
+    .list{display:grid;gap:10px;margin-top:12px}
+    .list li{list-style:none;display:flex;gap:10px}
+    .list svg{flex:0 0 18px;margin-top:4px}
+
+    footer{border-top:1px solid rgba(148,163,184,.15);padding:28px 0;color:var(--muted)}
+    .foot{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center}
+    .small{font-size:12px}
+    .locations{opacity:.8}
+
+    /* Smooth anchors */
+    html{scroll-behavior:smooth}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mentee Group Ltd",
+    "url": "https://mentee.group/",
+
+    "sameAs": ["https://www.linkedin.com/company/mentee-group"],
+    "contactPoint": [{"@type":"ContactPoint","contactType":"sales","email":"hello@menteegroup.com"}]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav" id="nav">
+      <div class="brand">
+        <span class="brand-badge" aria-hidden="true">
+          <!-- minimalist M logo -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 18V6l4 5 4-5 4 5 4-5v12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <a href="#top" style="font-size:18px;">MENTEE GROUP <span style="opacity:.7;font-weight:700">Ltd</span></a>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#clients">Clients</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" data-mail href="#">Book a chat</a>
+      </nav>
+      <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <span class="eyebrow">Consulting & Software</span>
+      <h1>We build products and data systems that <span style="background:linear-gradient(135deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">move metrics</span>.</h1>
+      <p class="lead">Mentee Group Ltd partners with founders and product teams to ship outcomes—not decks. We bring senior product management and hands‑on data & analytics engineering, plus focused software tools to accelerate your roadmap.</p>
+      <div class="hero-cta">
+        <a class="cta" data-mail href="#">Contact us</a>
+        <a class="subtle" href="#services">See what we do ↓</a>
+      </div>
+      <div class="kpi" aria-label="Selected impact metrics">
+        <div class="item"><strong style="font-size:22px">+18%</strong><div class="muted small">Checkout conversion uplift</div></div>
+        <div class="item"><strong style="font-size:22px">-42%</strong><div class="muted small">Time-to-insight with unified metrics</div></div>
+        <div class="item"><strong style="font-size:22px">4–6 wks</strong><div class="muted small">Typical time to MVP + data foundation</div></div>
+      </div>
+    </section>
+
+    <section id="services" class="container">
+      <h2 style="margin:0 0 14px">Services</h2>
+      <p class="muted">End‑to‑end help from problem framing to shipped product and measurable impact.</p>
+      <div class="grid cards-3" style="margin-top:16px">
+        <article class="card">
+          <div class="pill"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 6v12m-6-6h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Product Management</div>
+          <h3>Roadmaps that de-risk and deliver</h3>
+          <p class="muted">Discovery, opportunity sizing, spec & UX, KPI trees, experiment design, lean delivery. We co-own outcomes, not just tickets.</p>
+        </article>
+        <article class="card">
+          <div class="pill"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h18v6H3zM3 15h18v6H3z" stroke="currentColor" stroke-width="2"/><path d="M8 6h8M8 18h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Data & Analytics Engineering</div>
+          <h3>From raw events to trusted metrics</h3>
+          <p class="muted">Event modeling, dbt, warehouses (Snowflake/BigQuery/Postgres), semantic layers, reverse ETL, governance & documentation.</p>
+        </article>
+        <article class="card">
+          <div class="pill"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v4M12 18v4M2 12h4m12 0h4" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/></svg> AI & Automation</div>
+          <h3>Ship faster with intelligent tooling</h3>
+          <p class="muted">LLM‑assisted analytics, SQL generation & autofix, workflow agents, evaluation harnesses, prompt & data pipelines.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="products" class="container">
+      <div class="split">
+        <div>
+          <h2 style="margin:0 0 10px">Products</h2>
+          <p class="muted">We build compact tools that remove friction in analytics and product delivery. Available as standalone or bundled with engagements.</p>
+          <ul class="list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7h16v10H4z" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg>
+              <div>
+                <strong>Mentee Metrics Layer</strong>
+                <div class="muted small">YAML semantic metrics + adapters for Metabase/Lightdash/BI. One source of truth, fewer headaches.</div>
+              </div>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="2"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <div>
+                <strong>SQL Autofixer</strong>
+                <div class="muted small">Catches errors, suggests fixes, and explains queries. Works with dbt projects out of the box.</div>
+              </div>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l9 4.5-9 4.5L3 7.5 12 3z" stroke="currentColor" stroke-width="2"/><path d="M21 12l-9 4.5L3 12" stroke="currentColor" stroke-width="2"/></svg>
+              <div>
+                <strong>Experiment Kit</strong>
+                <div class="muted small">KPI trees, guardrail metrics, power calculators, and analysis templates that live with your product.</div>
+              </div>
+            </li>
+          </ul>
+          <div class="hero-cta" style="margin-top:14px">
+            <a class="cta" data-mail href="#">Request a demo</a>
+            <a class="subtle" href="#contact">Pricing & licensing →</a>
+          </div>
+        </div>
+        <div class="card" style="align-self:start">
+          <h3 style="margin-top:0">How we deliver</h3>
+          <ol class="list" style="margin:0">
+            <li><strong>Discovery & KPI mapping.</strong> Align around impact, not outputs.</li>
+            <li><strong>Data foundation.</strong> Events, models, and semantic layer.</li>
+            <li><strong>Fast product loops.</strong> Build, measure, learn week by week.</li>
+            <li><strong>Enablement.</strong> Docs, playbooks, and handover you’ll actually use.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" class="container">
+      <h2 style="margin:0 0 10px">Expertise</h2>
+      <p class="muted">Stacks & tools we’re fluent in:</p>
+      <div class="grid cards-3" style="margin-top:12px">
+        <div class="card"><h3>Product</h3><p class="muted">Roadmapping • Experiment design • KPI trees • Spec & UX flows • Monetization • Activation & retention • Marketplace dynamics</p></div>
+        <div class="card"><h3>Data</h3><p class="muted">Snowflake • BigQuery • Redshift • Postgres • dbt • Airflow • Fivetran • Metrics layers • Reverse ETL • Warehouse-native apps</p></div>
+        <div class="card"><h3>Analytics</h3><p class="muted">Metabase • Lightdash • Looker • Superset • Amplitude • Mixpanel • A/B tools • Custom notebooks</p></div>
+      </div>
+    </section>
+
+    <section id="clients" class="container">
+      <h2 style="margin:0 0 10px">Selected work</h2>
+      <div class="grid cards-3" style="margin-top:12px">
+        <article class="card">
+          <h3>Checkout uplift for B2C subscription</h3>
+          <p class="muted">Rewrote KPI tree, instrumented events, and iterated on pricing & UX. <strong>+18% conversion</strong> and clearer guardrails in 6 weeks.</p>
+        </article>
+        <article class="card">
+          <h3>Marketplace supply reliability</h3>
+          <p class="muted">Demand/supply diagnostics, no‑show modeling, and incentives. <strong>-25% cancellations</strong> and improved fulfillment rate.</p>
+        </article>
+        <article class="card">
+          <h3>Metrics unification for SaaS</h3>
+          <p class="muted">dbt models + semantic metrics for BI & product analytics. <strong>One source of truth</strong> across teams.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <div class="split">
+        <div>
+          <h2 style="margin:0 0 10px">About Mentee Group Ltd</h2>
+          <p class="muted">We’re a senior, hands‑on partner. We’ve shipped products across consumer, B2B, and marketplaces, and built data foundations that make analytics effortless instead of after‑the‑fact.</p>
+          <ul class="list">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Outcome‑oriented: we define success with you and measure it.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Pragmatic: small building blocks, shipped quickly.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Transparent: docs and playbooks by default.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Areas we focus on</h3>
+          <p class="muted">• Product management • Data & analytics • AI‑assisted workflows</p>
+          <p class="muted">We work remotely worldwide, with roots in Lisbon and Belgrade.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2 style="margin:0 0 10px">Contact</h2>
+      <p class="muted">Tell us about your goals and constraints. We’ll suggest a path to impact.</p>
+      <div class="grid cards-2" style="margin-top:12px">
+        <div class="card">
+          <h3 style="margin-top:0">Email</h3>
+          <p><a data-mail href="#">(enable JS)</a></p>
+          <p class="small muted"><!-- TODO: set your real email by editing the JS at the bottom of this file. --></p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Call</h3>
+          <p class="muted">Prefer a quick call? Drop a line and we’ll send a booking link.</p>
+          <a class="subtle" data-mail href="#">Request link →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div class="small">© <span id="y"></span> Mentee Group Ltd</div>
+      <div class="locations small">Lisbon • Belgrade • Remote worldwide</div>
+      <div class="small"><a href="#top">Back to top ↑</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // ----- Email (simple obfuscation; edit to your real address) -----
+    const emailUser = "glebsologub";         // ← change if needed
+    const emailDomain = "gmail.com"; // ← change if needed
+    const email = `${emailUser}@${emailDomain}`;
+    document.querySelectorAll('[data-mail]').forEach(a=>{ a.href = `mailto:${email}`; a.textContent = a.classList.contains('cta') || a.classList.contains('subtle') ? a.textContent : email; });
+
+    // Year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
