@@ -280,9 +280,8 @@
   </footer>
 
   <script>
-    // ----- Email (simple obfuscation; edit to your real address) -----
-    const emailUser = "glebsologub";         // ← change if needed
-    const emailDomain = "gmail.com"; // ← change if needed
+    const emailUser = "director";
+    const emailDomain = "mentee.group";
     const email = `${emailUser}@${emailDomain}`;
     document.querySelectorAll('[data-mail]').forEach(a=>{ a.href = `mailto:${email}`; a.textContent = a.classList.contains('cta') || a.classList.contains('subtle') ? a.textContent : email; });
 
